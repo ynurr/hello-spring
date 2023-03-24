@@ -9,12 +9,12 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service // 스프링이 실행될 때 서비스인 거 알고 스프링에 등록
+//@Service // 스프링이 실행될 때 서비스인 거 알고 스프링에 등록
 public class MemberService {
 
     private final MemberRepository memberRepository;
 
-    @Autowired // 이 생성자(MemberService) 호출할 때 @Autowired가 있으면 MemberRepository가 필요하구나 하고 스프링 컨테이너에 넣어준다
+//    @Autowired // 이 생성자(MemberService) 호출할 때 @Autowired가 있으면 MemberRepository가 필요하구나 하고 스프링 컨테이너에 넣어준다
     public MemberService(MemberRepository memberRepository) { // DI(Dependency Injection)
         this.memberRepository = memberRepository;
     }
